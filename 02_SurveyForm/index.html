@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<link rel="stylesheet" href="styles.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<main id="main">
+			<h1 id="title">freeCodeCamp Survey Form</h1>
+			<p id="description">Thank you for taking the time to help us improve the platform</p>
+			<form id="survey-form">
+				<label for="name" id="name-label">Name</label><br>
+				<input type="text" id="name" required placeholder="Enter your name"><br>
+				<br>
+				<label for="email" id="email-label">Email Address</label><br>
+				<input type="email" id="email" required placeholder="Enter your Email"><br>
+				<br>
+				<label for="number" id="number-label">Age <i>(optional)</i></label><br>
+				<input type="number" id="number" placeholder="Age" min="18" max="120"><br>
+				<br>
+				<label for="dropdown" id="dropdown-label">Which option best describes your current role?</label><br>
+				<select id="dropdown" required>
+					<option value="Select an option" disabled selected class="disabledDropdownOption">Choose an option</option>
+					<option value="option1">Student</option>
+					<option value="option2">Full time job</option>
+					<option value="option3">Full time student</option>
+					<option value="option4">Prefer not to say</option>
+					<option value="option5">Other</option>
+				</select><br>
+				<br>
+				<label for="radioGroup" id="radioGroup-label">Would you recommend freeCodeCamp to a friend?</label><br>
+				<input type="radio" name="radioGroup" selected value="Option1" class="radioGroup">Definitely<br>
+				<input type="radio" name="radioGroup" value="Option2" class="radioGroup">Maybe<br>
+				<input type="radio" name="radioGroup" value="Option3" class="radioGroup">Not sure<br>
+				<br>
+				<label for="dropdown-fav" id="dropdown-fav-label">What is your favourite feature of freeCodeCamp?</label><br>
+				<select id="dropdown-fav" required>
+					<option value="Select an option" disabled selected>Choose an option</option>
+					<option value="option1">Challenges</option>
+					<option value="option2">Projects</option>
+					<option value="option3">Community</option>
+					<option value="option4">Open Source</option>
+				</select><br>
+				<br>
+				<label for="checkGroup" id="check-label">What would you like to see improved? <i>(check all that apply)</i></label><br>
+				<input type="checkbox" name="ckeckbox" value="option1" class="checkbox-improved">Front-end Projects<br>
+				<input type="checkbox" name="ckeckbox" value="option2" class="checkbox-improved">Back-end Projects<br>
+				<input type="checkbox" name="ckeckbox" value="option3" class="checkbox-improved">Data Visualization<br>
+				<input type="checkbox" name="ckeckbox" value="option4" class="checkbox-improved">Challenges<br>
+				<input type="checkbox" name="ckeckbox" value="option5" class="checkbox-improved">Open Source Community<br>
+				<input type="checkbox" name="ckeckbox" value="option6" class="checkbox-improved">Gitter Help Rooms<br>
+				<input type="checkbox" name="ckeckbox" value="option7" class="checkbox-improved">Videos<br>
+				<input type="checkbox" name="ckeckbox" value="option8" class="checkbox-improved">City Meetups<br>
+				<input type="checkbox" name="ckeckbox" value="option9" class="checkbox-improved">Wiki<br>
+				<input type="checkbox" name="ckeckbox" value="option10" class="checkbox-improved">Forum<br>
+				<input type="checkbox" name="ckeckbox" value="option11" class="checkbox-improved">Additional Courses<br>
+				<br>
+				<label for="textarea" id="textarea-label">Any comments or suggestions?</label><br>
+				<textarea id="textarea" rows="5" placeholder="Enter your comment here..."></textarea><br>
+				<br>
+				<input type="submit" id="submit" value="Submit">
+			</form>
+		</main>
+	</body>
+</html>
