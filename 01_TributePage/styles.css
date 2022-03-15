@@ -1,0 +1,129 @@
+:root{
+  --temp-border: black solid 0px;
+  --bgColor-header:#eeddbb;
+  --bgColor-main:#eeddaa;
+  --bgColor-footer: #ddcc99;
+  --font-felpic: 'IM Fell DW Pica', serif;
+  --font-feleng: 'IM Fell English SC', serif;
+  --font-mirza: 'Mirza', cursive;
+  --font-ovrloc: 'Overlock', cursive;
+  --font-porlli: 'Port Lligat Sans', sans-serif;
+  --font-spirax: 'Spirax', cursive;
+  --font-specelit:'Special Elite', cursive;
+}
+
+*{
+  box-sizing:border-box;
+  border: var(--temp-border);
+}
+
+body{
+  font-family: var(--font-spirax);
+  display:grid;
+  justify-items:center;
+}
+
+#main{
+  background: linear-gradient(to bottom, var(--bgColor-header) 0%, var(--bgColor-footer) 100%);
+  display:grid;
+  justify-items:center;
+  width:70vw;
+  padding:0 0 20px 0;
+  border-radius:10px;
+}
+
+#header{
+  text-align:center;
+  width:70vw;
+  display:grid;
+  justify-items:center;
+  border-radius:10px;
+}
+
+#title{
+  color:#664400;
+  margin-bottom:-10px;
+  text-shadow: 0px 4px 8px rgba(0,0,0,0.8);
+}
+
+#subheading{
+  color:#664400;
+  font-family: var(--font-mirza);
+  margin-bottom:0px;
+}
+
+#img-div{
+  width:80%;
+  background-color:#ffffef;
+  border-radius:10px;
+  padding:10px;
+  display:grid;
+  justify-items:center;
+}
+
+#image{
+  max-width:100%;
+  height:auto;
+  border-radius:10px;
+}
+
+#img-caption {
+  font-family: var(--font-felpic);
+  margin:10px 20px 0px 20px;
+}
+
+#main-heading{
+  color:#664400;
+  text-shadow:0px 3px 4px rgba(0,0,0,0.5);
+  font-family:var(--font-mirza);
+}
+
+#tribute-info{
+  width:70%;
+  font-family:var(--font-specelit);
+  font-size: 16px;
+}
+
+#tribute-info li{
+  margin-bottom:10px;
+}
+
+#tribute-info strong{
+  font-size: 18px;
+  text-decoration: underline;
+}
+
+#quotation{
+  width:70%;
+  font-family: var(--font-feleng);
+}
+
+#quotation span{
+  float:right;
+}
+
+hr{
+  border-bottom:rgba(0,0,0,0.2) solid 1px;
+  width:70%;
+}
+
+#footer{
+  text-align:center;
+  display:grid;
+  justify-items:center;
+  padding:20px 0 20px 0;
+  border-radius:10px;
+}
+
+#wiki-link{
+  width:90%;
+  font-family: var(--font-ovrloc);
+  font-weight:700;
+}
+
+#wiki-link a{
+  color:#664400;
+  border-radius:20px;
+  background-color:#ccaa66;
+  padding:0px 10px 3px 10px;
+}
