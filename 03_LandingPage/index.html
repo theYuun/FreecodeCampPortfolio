@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<div class="roundedShadow"></div>
+		<header id="header">
+			<img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png" id="header-img" alt="Company Logo">
+			<div id="header-spacer"></div>
+			<nav id="nav-bar">
+				<ul class="nav-unordered-list">
+					<li class="nav-unordered-list-item"><a  class="nav-link" href="#features"><span>Features</span></a></li>
+					<li class="nav-unordered-list-item"><a class="nav-link" href="#how-it-works"><span>How It Works</span></a></li>
+					<li class="nav-unordered-list-item"><a class="nav-link" href="#pricing"><span>Pricing</span></a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<section class="hero">
+				<form id="form" action="https://www.freecodecamp.com/email-submit">
+					<h2 class="form-heading">Handcrafted, home-made masterpeices</h2>
+					<input class="form-email" type="email" id="email" placeholder="Enter your email address here" name="email" required>
+					<input id="submit" type="submit" value="GET STARTED" class="btn">
+				</form>
+			</section>
+			<section id="features">
+				<div class="feature">
+					<div class="feature-icon">
+						<svg viewBox="-20 -12 70 70" class="feature-svg">
+						  <path class="feature-path" d="M 0.5403374,27.295926 C 0.36331373,21.50114 4.4291654,15.326841 6.3274828,15.442731 c 4.3418182,0.265061 -2.9813014,14.739641 7.0421852,14.921081 4.081767,0.07389 6.025577,-1.824558 6.066047,-5.996321 0.0516,-5.322222 -8.810004,-6.788697 -8.366957,-14.223833 0.27224,-4.5685398 2.98421,-9.54171544 5.368797,-9.55227944 2.37702,-0.01053 1.13537,6.43673164 7.803467,11.23210244 2.41965,1.740091 7.986804,7.147829 7.954294,16.58804 -0.0329,9.556098 -8.841974,14.86134 -16.106378,14.711907 C 8.8245316,42.973995 0.8644844,37.906667 0.5403374,27.295926 Z"/>
+						</svg>
+					</div>
+					<div class="feature-content">
+						<h2 class="feature-heading">Premium Materials</h2>
+						<p class="feature-paragraph">Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+					</div>
+				</div>
+				<div class="feature">
+					<div class="feature-icon">
+						<svg viewBox="-15 -20 80 80" class="feature-svg">
+							<path class="feature-path" d="m 40.548475,30.882572 c 2.1965,0 3.939457,1.7449 3.939457,3.941407 0,2.19651 -1.742957,3.93945 -3.939457,3.93945 -2.19651,0 -3.939457,-1.74294 -3.939457,-3.93945 0,-2.196507 1.742947,-3.941407 3.939457,-3.941407 z M 6.1508108,34.823979 c 0,4.07222 3.3379351,7.410157 7.4101562,7.410157 4.07222,0 7.41016,-3.337937 7.41016,-7.410157 h 12.167191 c 0,4.07222 3.33793,7.410157 7.410157,7.410157 4.072217,0 7.410157,-3.337937 7.410157,-7.410157 l 5.604757,0.008 -0.0145,-4.507347 -2.41011,0.005 -0.0247,-10.842714 -10.897084,-10.8059943 -5.291667,0.0282 V 3.587547 c 0,-1.6619967 -1.338,-2.99999676 -2.999997,-2.99999676 H 3.551074 c -1.6619998,0 -3.0000014,1.33800006 -3.0000014,2.99999676 v 28.234745 c 0,1.662 1.3380016,2.999997 3.0000014,2.999997 z m 7.4101562,-3.941407 c 2.196508,0 3.93946,1.7449 3.93946,3.941407 0,2.19651 -1.742952,3.93945 -3.93946,3.93945 -2.196507,0 -3.9394531,-1.74294 -3.9394531,-3.93945 0,-2.196507 1.7429461,-3.941407 3.9394531,-3.941407 z m 34.052525,-8.694954 -0.0467,-1.53183 -8.309777,-8.355324 -4.331687,0.027 v 9.747054 z" />
+						</svg>
+					</div>
+					<div class="feature-content">
+						<h2 class="feature-heading">Fast Shipping</h2>
+						<p class="feature-paragraph">We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+					</div>
+				</div>
+				<div class="feature">
+					<div class="feature-icon">
+						<svg viewBox="-15 -28 80 80" class="feature-svg">
+							<path class="feature-path" d="m 8.6318501,8.9220489 34.6596619,-0.0155 -10e-4,10.3504931 -34.6779289,-0.0164 z M 5.7162711,22.291009 H 46.119642 l -0.003,-5.457027 h 2.711247 l -7.4e-4,-5.655467 h -2.713437 l -0.006,-5.3531046 -40.3855409,0.0307 z M 31.285431,0.59519643 h 16.729021 c 1.661997,0 2.999997,1.33800937 2.999997,3.00000847 l 2.6e-4,2.1593858 h 1.17474 c 1.108,0 1.999997,0.8919994 1.999997,1.9999988 V 20.357172 c 0,1.107997 -0.891997,1.999997 -1.999997,1.999997 h -1.17474 l -2.4e-4,1.89479 c 0,1.662 -1.338,2.999997 -2.999997,2.999997 H 3.611364 c -1.6620029,0 -3.00000445,-1.337997 -3.00000445,-2.999997 V 3.5952049 c 0,-1.6619991 1.33800155,-3.00000847 3.00000445,-3.00000847 h 27.674067" />
+						</svg>
+					</div>
+					<div class="feature-content">
+						<h2 class="feature-heading">Quality Assurance</h2>
+						<p class="feature-paragraph">For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+					</div>
+				</div>
+			</section>
+			<section id="how-it-works">
+				<iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/y8Yv4pnO7qc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</section>
+			<section id="pricing">
+				<div class="options-container">
+					<div class="option">
+						<h3 class="option-heading">TENOR TROMBONE</h3>
+						<h2 class="option-price">$600</h2>
+						<span class="option-feature">Reaches fifth partial unmodified</span>
+						<span class="option-feature">No crooks, valves or keys</span>
+						<span class="option-feature">Tonal range from E through F</span>
+						<input class="btn" type="button" value="Select">
+					</div>
+					<div class="option">
+						<h3 class="option-heading">BASS TROMBONE</h3>
+						<h2 class="option-price"><span>$900</span></h2>
+						<span class="option-feature">Pitch lowering using two valves</span>
+						<span class="option-feature">Independent valve systems</span>
+						<span class="option-feature">Tonal range from A<sub>0</sub> through F<sub>4</sub>/G<sub>4</sub></span>
+						<input class="btn" type="button" value="Select">
+					</div>
+					<div class="option">
+						<h3 class="option-heading"><span>CONTRABASS TROMBONE</span></h3>
+						<h2 class="option-price">$1200</h2>
+						<span class="option-feature">Includes two valve attachments</span>
+						<span class="option-feature">Includes special tuning slide</span>
+						<span class="option-feature">Tonal range from E<sub>1</sub> through E<sub>4</sub></span>
+						<input class="btn" type="button" value="Select">
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer id="footer">
+			<div class="footer-buttons">
+				<input type="button" class="footer-button" value="Privacy">
+				<input type="button" class="footer-button" value="Terms">
+				<input type="button" class="footer-button" value="Contact">
+			</div>
+			<div class="footer-copyright">
+				<sub>not</sub>&#169 2021, <sub>un</sub>Original Trombones
+			</div>
+		</footer>
+	</body>
+</html>
