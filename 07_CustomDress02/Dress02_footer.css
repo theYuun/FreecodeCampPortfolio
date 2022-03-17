@@ -1,0 +1,51 @@
+
+/* ==== Footer Section ==== */
+
+footer{
+    display:flex;
+    justify-content: space-between;
+}
+
+.footer-discount{
+    position:fixed;
+    left:20px;
+    bottom:20px;
+    height:60px;
+    width: 300px;
+    background-color: white;
+    box-shadow: var(--shadows);
+    border-radius: 10px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-nav-pricing-text);
+    transform: scale(1.0);
+    transition: var(--transition-button);
+}
+
+.footer-discount:hover{
+    transform: scale(1.05);
+}
+
+.footer-chat{
+    position:fixed;
+    right: 20px;
+    bottom: 20px;
+    width:60px;
+    height:60px;
+    border-radius: 50%;
+    background-color: var(--color-logo-star);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(1.0);
+    transition: var(--transition-button);
+}
+
+.footer-chat:hover{
+    transform: scale(1.2);
+}
+
+.footer-chat img{
+    position: relative;
+}
