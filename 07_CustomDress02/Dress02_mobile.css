@@ -1,0 +1,122 @@
+/* ==== The vertical menu for when the device width matches closer to mobile ==== */
+
+.nav-vertical{
+    display:none;
+    position: fixed;
+    top: 30px;
+    right:20px;
+}
+
+.nav-vertical svg{
+    display:flex;
+    margin: auto;
+}
+
+.nav-vertical-shade{
+    position: fixed;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    left:0px;
+    background-color: rgba(0,0,0,0.5);
+    z-index:1;
+}
+
+.nav-vertical-box{
+    position: fixed;
+    background:repeating-linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.9) 5%, rgba(255, 255, 255, 0.9) 95%, rgba(255, 255, 255, 0) 100%);
+    left: 0px;
+    right: 0px;
+    text-align: right;
+    z-index:2;
+}
+
+.nav-spacer{
+    padding: 20px;
+}
+
+.nav-vertical-box a{
+    padding: 50px;
+}
+
+/* ==== non-list nav-box-vertical ==== */
+
+.nav-vertical-box{
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-vertical-box a:hover{
+    background-color: rgba(0,0,0,0.25);
+}
+
+/* ==== list nav-vertical-box ==== */
+
+.nav-vertical-box-list{
+    position: fixed;
+    background:repeating-linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.9) 5%, rgba(255, 255, 255, 0.9) 95%, rgba(255, 255, 255, 0) 100%);
+    left: 0px;
+    right: 0px;
+    text-align: right;
+}
+
+.nav-vertical-box-list li{
+    padding: 50px;
+}
+
+.nav-spacer{
+    padding: 10px;
+}
+
+.nav-vertical-box-list a{
+    
+    position:absolute;
+    left:0px;
+    right:0px;
+    /*
+    */
+    transform: translateY(-50px);
+    padding: 50px;
+}
+
+.nav-vertical-box-list a:hover{
+    background-color: rgba(0,0,0,0.25);
+}
+
+@media screen and (max-width: 980px){
+
+    /* ==== Setting visibility of different menus ==== */
+
+    .nav-horizontal{
+        display: none;
+    }
+
+    .nav-vertical{
+        display: unset;
+    }
+    
+    /* ==== Main Page Content ====*/
+
+    .main-info{
+        width: 90%;
+        display: flex;
+        margin: auto;
+        margin-top: 100px;
+    }
+
+    .left{
+        width:100%;
+        margin-top: 30px;
+    }
+    
+    .right{
+        margin-top: 30px;
+        width:100%;
+    }
+    
+    .page-content{
+        margin-top: 30px;
+        width: 90%;
+    }
+
+}

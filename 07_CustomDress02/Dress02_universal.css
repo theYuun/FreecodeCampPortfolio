@@ -1,0 +1,55 @@
+:root{
+
+    --color-try-button-gradient: #8900eb;
+    --color-try-button-gradient-transparent: rgba(137, 0, 235, 0);
+    --color-try-button-gradient-analog-right: #eb00d7;
+    --color-try-button-gradient-tetradic-right: #EB1400;
+    --color-try-button-gradient-triadic-right: #eb8900;
+    --color-try-button-gradient-comp: #62eb00;
+    --color-try-button-gradient-triadic-left: #00eb89;
+    --color-try-button-gradient-tetradic-left: #00D7EB;
+    --color-try-button-gradient-analog-left: #1400eb;
+    --color-try-button-gradient-monochrome: #a21fff;
+
+    --color-logo-star: #f7278c;
+    --color-nav-pricing-text: #fd469f;
+    --shadow-color: rgba(0,0,0,0.2);
+    --shadows: 0 0 10px 5px var(--shadow-color);
+
+    --transition-button: all 0.1s;
+
+    --test-borders: rgba(0,0,0,0.2) solid 1px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    
+    /* test 
+    border: var(--test-borders);
+    /* test */
+}
+
+body{
+    background-color: var(--color-try-button-gradient);
+    color: white;
+}
+
+.flex-spacer{
+    flex: 1;
+}
+
+.toggled{
+    display: none;
+}
+
+.show{
+    visibility: visible;
+}
+
+.hidden{
+    visibility: hidden;
+}

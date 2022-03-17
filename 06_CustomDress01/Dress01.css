@@ -1,0 +1,166 @@
+:root{
+    --button-submit-gradient-left: #4400a5;
+    --button-submit-gradient-right: #851bef;
+    --button-github: #282d34;
+    --button-netlify: #18ad9f;
+    --form-background-color: #f4f5f9;
+    --test-border: royalblue solid 1px;
+}
+
+html{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 8pt;
+}
+
+body{
+    background-color: #f3f3ff;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    margin: auto;
+    font-size: 16pt;
+}
+
+main{
+    width: 720px;
+    height: 500px;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.1);
+    margin-top: 150px;
+    display:flex;
+}
+
+.left{
+    width: 400px;
+    border: var(--test-border);
+}
+
+.left-short-description{
+    border: var(--test-border);
+    height: 50px;
+    padding: 20px;
+    text-align: center;
+    font-size: 12pt;
+}
+
+.left-pros{
+    border: var(--test-border);
+    display: flex;
+    height: 60px;
+    padding: 20px;
+    padding-left:auto;
+    padding-right:auto;
+    font-size: 10pt;
+}
+
+.left-pros section:nth-child(odd){
+    border: var(--test-border);
+    width: 30%;
+    margin: auto;
+    text-align: center;
+}
+
+.left-pros section:nth-child(even){
+    border: var(--test-border);
+    width: 3px;
+    background-color: rgba(0,0,0,0.2);
+}
+
+.left-image{
+    border: var(--test-border);
+    height: 200px;
+}
+.left-image img{
+    border: var(--test-border);
+    width: 300px;
+    margin: 50px;
+    margin-top: 15px;
+}
+
+.left-list{
+    border: var(--test-border);
+    height:100px;
+}
+
+.right{
+    border: var(--test-border);
+    height: 100%;
+    background-color: var(--form-background-color);
+    border-radius: 10px;
+    width:320px;
+}
+
+.right-newsletter{
+    height:50px;
+    
+}
+.right-newsletter section{
+    margin: 20px;
+}
+
+.right-newsletter-checkbox:checked{
+    appearance: none;
+    width: 16px!important;
+    height:16px!important;
+    border: 2px solid var(--button-submit-gradient-left);
+    background-color: var(--button-submit-gradient-right);
+    border-radius: 3px;
+    box-shadow: none;
+}
+
+.right-newsletter-checkbox{
+    appearance: none;
+    width: 16px!important;
+    height:16px!important;
+    border: 2px solid var(--button-submit-gradient-left);
+    border-radius: 3px;
+    box-shadow:inset 0 0 2px 1px var(--button-submit-gradient-right);
+}
+
+.right-newsletter-label
+{
+    
+}
+
+.right-github{
+
+}
+
+.right-netlify{
+
+}
+
+.right-or{
+    width:300px;
+}
+
+.right-or td{
+
+}
+
+.right-or td :nth-child(odd){
+    width: 100px;
+}
+
+.right-or td :nth-child(even){
+    width: 60px;
+}
+
+.right-form{
+}
+
+.right-form input {
+    margin:5px;
+    width: auto;
+    height:50px;
+    border:none;
+    box-shadow: 0 0 10px 5px rgba(0,0,0,0.2);
+}
+
+.right-form strong{
+    color:red;
+}

@@ -1,0 +1,108 @@
+
+/* ==== Main Page Content ====*/
+
+.main-info{
+    width: 850px;
+    display: flex;
+    margin: auto;
+    margin-top: 100px;
+    flex-wrap: wrap;
+}
+
+/* ==== Left side content of the main info section ==== */
+
+.left{
+    width: 550px;
+}
+
+.left h1{
+    font-size: 8em;
+    margin-left: 12px;
+}
+
+.left-description{
+    font-size: 2em;
+    margin-left: 13px;
+    margin-top: 10px;
+}
+
+/* ==== Right side content of the main info section ==== */
+
+.right-vid-icon-outer{
+    /*
+    position:flex;
+    margin: auto;
+    */
+    width: 160px;
+    height: 160px;
+    background-color: rgba(255,255,255,0.3);
+    border-radius: 50%;
+}
+.right-vid-icon-inner{
+    
+    margin: 0 auto;
+    
+    background-color: white;
+    box-shadow: var(--shadows);
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+}
+
+.right-vid-icon-triangle{
+    margin: 40px;
+}
+
+/* ==== Try button at bottom of main content ==== */
+
+.try-button{
+    width:100%;
+}
+
+.try-button a{
+    display:flex;
+    font-weight: bold;
+    margin-left: 13px;
+    margin-top: 34px;
+    background: linear-gradient(90deg, var(--color-try-button-gradient-analog-right), var(--color-try-button-gradient));
+    width: 200px;
+    border-radius: 30px;
+    justify-content: center;
+    color: white;
+    padding: 15px;
+    transform: scale(1.0f);
+    transition: var(--transition-button);
+}
+
+.try-button a::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 130px;
+    top: 32px;
+    height: 3px;
+    background: #fff;
+    transform-origin: left;
+    transition: transform 0.1s ease-in-out;
+    transform: scaleX(0);
+}
+
+.try-button a:hover{
+    transform: scale(1.05);
+}
+
+.try-button a:hover::after{
+    transform:scaleX(1);
+}
+
+/* ==== Page Content Filler ==== */
+
+.page-content{
+    height: 5000px;
+    width: 850px;
+    display:flex;
+    margin:auto;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+}

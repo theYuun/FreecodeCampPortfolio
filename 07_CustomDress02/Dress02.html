@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta>
+        <meta>
+        <meta>
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="Dress02_universal.css">
+        <link rel="stylesheet" href="Dress02_mobile.css">
+        <link rel="stylesheet" href="Dress02_header.css">
+        <link rel="stylesheet" href="Dress02_navBox_h.css">
+        <link rel="stylesheet" href="Dress02_main.css">
+        <link rel="stylesheet" href="Dress02_trustpilot.css">
+        <link rel="stylesheet" href="Dress02_footer.css">
+        <!-- REMIXICON CDN -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+        <title>Theunis Lombard Portfolio Dress 02</title>
+    </head>
+    <body>
+
+        <!--
+            Place the main content at the top of the layout so that
+            it gets rendered at the back of the rendering stack
+            where z-index can't touch later rendered content
+        -->
+
+        <main>
+            <div class="main-info">
+                <section class="left">
+                    <h1>Divi</h1>
+                    <div class="trustpilot">
+                        <span class="trustpilot-rating"><strong>Excellent</strong></span>
+                        <span class="trustpilot-stars"><img src="./images/trustpilot-stars.jpg"><img src="./images/trustpilot-stars.jpg"><img src="./images/trustpilot-stars.jpg"><img src="./images/trustpilot-stars.jpg"><img src="./images/trustpilot-stars.jpg"></span>
+                        <span class="trustpilot-numbers"><strong>17,881</strong> reviews on </span>
+                        <span class="trustpilot-logo"><img src="./images/trustpilot-star-big.png"> Trustpilot</span>
+                    </div>
+                    <p class="left-description">This is the second of three showcases of websites I've chosen to rebuild using HTML, CSS and Javascript</p>
+                </section>
+                <section class="right">
+                    <div class="right-vid-icon">    
+                        <div class="right-vid-icon-outer">
+                            <div class="right-vid-icon-inner">
+                                <svg class="right-vid-icon-triangle" width="50px" height="45px">
+                                    <path d="m 5 4 l 40 18 l -40 18 z" fill="#000" stroke-width="0"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="try-button">
+                    <a href="#">TRY IT FOR FREE!</a>
+                </section>
+            </div>
+            <div class="page-content">
+                <i class="ri-close-line"></i>
+                <i class="ri-close-circle-line"></i>
+                <i class="ri-close-circle-fill"></i>
+                <i class="ri-menu-line"></i>
+            </div>
+        </main>
+
+        <!--
+            Placing the Header, with the nav bar below the rendering order
+            of the main content so that it renders after the main content
+            where z-index cannot fix draw order problems
+        -->
+
+        <footer>
+            <a href="#" class="footer-discount">CLAIM THAT 10% DISCOUNT</a>
+            <a href="#" class="footer-chat"><img src="./images/chat-icon.png"></a>
+        </footer>
+
+        <header>
+            
+            <div class="logo"><span class="logo-elegant">beautif</span><span class="logo-themes">themes</span><span class="logo-star">*</span></div>
+            <!--<span class="flex-spacer"></span>-->
+            <nav class="nav-horizontal">
+                <ul class="nav-list" id="nav-list">
+                    
+                    <li class="nav-list-index nav-pricing" id="nav-list-index-pricing">
+                        <a href="#"><span>PRICING</span></a>
+                    </li>
+
+                    <li class="nav-list-index nav-account" id="nav-list-index-account">
+                        <a href="#" onmouseover="ShowElementOfId('nav-box-01')" onmouseout="HideElementOfId('nav-box-01')">ACCOUNT</a>
+                        <div class="nav-box hidden" id="nav-box-01" onmouseover="ShowElementOfId('nav-box-01')" onmouseout="HideElementOfId('nav-box-01')">
+                        
+                        </div>
+                    </li>
+
+                    <li class="nav-list-index nav-contact">
+                        <a href="#" onmouseover="ShowElementOfId('nav-box-02')" onmouseout="HideElementOfId('nav-box-02')">CONTACT</a>
+                        <div class="nav-box hidden" id="nav-box-02" onmouseover="ShowElementOfId('nav-box-02')" onmouseout="HideElementOfId('nav-box-02')">
+                            
+                        </div>
+                    </li>
+
+                    <li class="nav-list-index nav-products">
+                        <a href="#" onmouseover="ShowElementOfId('nav-box-03')" onmouseout="HideElementOfId('nav-box-03')">ALL PRODUCTS</a>
+                        <div class="nav-box hidden" id="nav-box-03" onmouseover="ShowElementOfId('nav-box-03')" onmouseout="HideElementOfId('nav-box-03')">
+                            
+                        </div>
+                    </li>
+
+                    <li class="nav-list-index nav-divi">
+                        <a href="#" onmouseover="ShowElementOfId('nav-box-04')" onmouseout="HideElementOfId('nav-box-04')">DIVI</a>
+                        <div class="nav-box hidden" id="nav-box-04" onmouseover="ShowElementOfId('nav-box-04')" onmouseout="HideElementOfId('nav-box-04')">
+                            
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="nav-vertical" onclick="ToggleElementOfId('nav-vertical-box')">
+                <svg width="50px" height="50px" stroke="#fff" stroke-width="5px">
+                    <path d="m 10 10 h 30"></path>
+                    <path d="m 10 20 h 30"></path>
+                    <path d="m 10 30 h 30"></path>
+                </svg>
+                <!--
+                <div class="nav-vertical-box toggled" id="nav-vertical-box">
+                    <div class="nav-spacer"></div>
+                    <a href="#">DIVI</a>
+                    <a href="#">ALL PRODUCTS</a>
+                    <a href="#">CONTACT</a>
+                    <a href="#">ACCOUNT</a>
+                    <a href="#">PRICING</a>
+                    <div class="nav-spacer"></div>
+                </div>
+            -->
+            <div class="nav-vertical-box-list toggled" id="nav-vertical-box">
+                    <div class="nav-spacer"></div>
+                    <ul>
+                        <li>
+                            <a href="#">DIVI</a>
+                        </li>
+                        <li>
+                            <a href="#">ALL PRODUCTS</a>
+                        </li>
+                        <li>
+                            <a href="#">CONTACT</a>
+                        </li>
+                        <li>
+                            <a href="#">ACCOUNT</a>
+                        </li>
+                        <li>
+                            <a href="#">PRICING</a>
+                        </li>
+                    </ul>
+                    <div class="nav-spacer"></div>
+                    <!--
+                <div class="nav-vertical-shade"></div>
+                -->
+                </div>
+            </nav>
+        </header>
+
+        <script src="Dress02.js"></script>
+    </body>
+</html>
